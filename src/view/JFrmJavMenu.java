@@ -81,6 +81,11 @@ public class JFrmJavMenu extends javax.swing.JFrame {
         jMnuJavProduto.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMnuJavProduto.setMnemonic('p');
         jMnuJavProduto.setText("Produto");
+        jMnuJavProduto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMnuJavProdutoActionPerformed(evt);
+            }
+        });
         jMenu1.add(jMnuJavProduto);
         jMenu1.add(jSeparator2);
 
@@ -131,6 +136,12 @@ public class JFrmJavMenu extends javax.swing.JFrame {
     private void jMnuJavVendedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuJavVendedorActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jMnuJavVendedorActionPerformed
+
+    private void jMnuJavProdutoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuJavProdutoActionPerformed
+        // TODO add your handling code here:
+        JDlgJavProduto jDlgJavProduto = new JDlgJavProduto(null, true);
+        jDlgJavProduto.setVisible(true);
+    }//GEN-LAST:event_jMnuJavProdutoActionPerformed
 
     /**
      * @param args the command line arguments
