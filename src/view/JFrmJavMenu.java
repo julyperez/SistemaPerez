@@ -61,11 +61,21 @@ public class JFrmJavMenu extends javax.swing.JFrame {
         jMnuJavCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/cliente.png"))); // NOI18N
         jMnuJavCliente.setMnemonic('c');
         jMnuJavCliente.setText("Cliente");
+        jMnuJavCliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMnuJavClienteActionPerformed(evt);
+            }
+        });
         jMnuJavCadastro.add(jMnuJavCliente);
 
         jMnuJavFornecedor.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMnuJavFornecedor.setMnemonic('f');
         jMnuJavFornecedor.setText("Fornecedor");
+        jMnuJavFornecedor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMnuJavFornecedorActionPerformed(evt);
+            }
+        });
         jMnuJavCadastro.add(jMnuJavFornecedor);
 
         jMnuJavVendedor.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, java.awt.event.InputEvent.CTRL_DOWN_MASK));
@@ -143,6 +153,18 @@ public class JFrmJavMenu extends javax.swing.JFrame {
         JDlgJavProduto jDlgJavProduto = new JDlgJavProduto(null, true);
         jDlgJavProduto.setVisible(true);
     }//GEN-LAST:event_jMnuJavProdutoActionPerformed
+
+    private void jMnuJavClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuJavClienteActionPerformed
+        // TODO add your handling code here:
+        JDlgJavCliente jDlgJavCliente = new JDlgJavCliente(null, true);
+        jDlgJavCliente.setVisible(true);
+    }//GEN-LAST:event_jMnuJavClienteActionPerformed
+
+    private void jMnuJavFornecedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuJavFornecedorActionPerformed
+        // TODO add your handling code here:
+        JDlgJavFornecedor jDlgJavFornecedor = new JDlgJavFornecedor(null, true);
+        jDlgJavFornecedor.setVisible(true);
+    }//GEN-LAST:event_jMnuJavFornecedorActionPerformed
 
     /**
      * @param args the command line arguments
