@@ -20,6 +20,7 @@ public class JDlgJavFornecedor extends javax.swing.JDialog {
         initComponents();
         setTitle("Cadastro de Fornecedor");
         setLocationRelativeTo(null);
+        desabilitar();
     }
     
     public void habilitar(){

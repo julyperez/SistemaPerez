@@ -6,6 +6,9 @@
       <SubComponents>
         <Menu class="javax.swing.JMenu" name="jMnuJavCadastro">
           <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/imagens/imagens/gravar.png"/>
+            </Property>
             <Property name="mnemonic" type="int" value="99"/>
             <Property name="text" type="java.lang.String" value="Cadastro"/>
           </Properties>
@@ -45,6 +48,9 @@
                 <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
                   <KeyStroke key="Ctrl+F"/>
                 </Property>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/imagens/imagens/fornecedor.png"/>
+                </Property>
                 <Property name="mnemonic" type="int" value="102"/>
                 <Property name="text" type="java.lang.String" value="Fornecedor"/>
               </Properties>
@@ -57,6 +63,9 @@
                 <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
                   <KeyStroke key="Ctrl+V"/>
                 </Property>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/imagens/imagens/vendedor.png"/>
+                </Property>
                 <Property name="mnemonic" type="int" value="118"/>
                 <Property name="text" type="java.lang.String" value="Vendedor"/>
               </Properties>
@@ -68,6 +77,9 @@
               <Properties>
                 <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
                   <KeyStroke key="Ctrl+P"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/imagens/imagens/produto.png"/>
                 </Property>
                 <Property name="mnemonic" type="int" value="112"/>
                 <Property name="text" type="java.lang.String" value="Produto"/>
@@ -89,6 +101,9 @@
                 <Property name="mnemonic" type="int" value="115"/>
                 <Property name="text" type="java.lang.String" value="Sair"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMnuJavSairActionPerformed"/>
+              </Events>
             </MenuItem>
           </SubComponents>
         </Menu>
@@ -149,7 +164,7 @@
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <EmptySpace min="0" pref="277" max="32767" attributes="0"/>
+          <EmptySpace min="0" pref="269" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>

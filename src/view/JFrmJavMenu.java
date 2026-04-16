@@ -43,6 +43,7 @@ public class JFrmJavMenu extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jMnuJavCadastro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/gravar.png"))); // NOI18N
         jMnuJavCadastro.setMnemonic('c');
         jMnuJavCadastro.setText("Cadastro");
 
@@ -69,6 +70,7 @@ public class JFrmJavMenu extends javax.swing.JFrame {
         jMnuJavCadastro.add(jMnuJavCliente);
 
         jMnuJavFornecedor.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMnuJavFornecedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/fornecedor.png"))); // NOI18N
         jMnuJavFornecedor.setMnemonic('f');
         jMnuJavFornecedor.setText("Fornecedor");
         jMnuJavFornecedor.addActionListener(new java.awt.event.ActionListener() {
@@ -79,6 +81,7 @@ public class JFrmJavMenu extends javax.swing.JFrame {
         jMnuJavCadastro.add(jMnuJavFornecedor);
 
         jMnuJavVendedor.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMnuJavVendedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/vendedor.png"))); // NOI18N
         jMnuJavVendedor.setMnemonic('v');
         jMnuJavVendedor.setText("Vendedor");
         jMnuJavVendedor.addActionListener(new java.awt.event.ActionListener() {
@@ -89,6 +92,7 @@ public class JFrmJavMenu extends javax.swing.JFrame {
         jMnuJavCadastro.add(jMnuJavVendedor);
 
         jMnuJavProduto.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMnuJavProduto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/produto.png"))); // NOI18N
         jMnuJavProduto.setMnemonic('p');
         jMnuJavProduto.setText("Produto");
         jMnuJavProduto.addActionListener(new java.awt.event.ActionListener() {
@@ -103,6 +107,11 @@ public class JFrmJavMenu extends javax.swing.JFrame {
         jMnuJavSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/exit.png"))); // NOI18N
         jMnuJavSair.setMnemonic('s');
         jMnuJavSair.setText("Sair");
+        jMnuJavSair.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMnuJavSairActionPerformed(evt);
+            }
+        });
         jMnuJavCadastro.add(jMnuJavSair);
 
         jMenuBar1.add(jMnuJavCadastro);
@@ -132,7 +141,7 @@ public class JFrmJavMenu extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 277, Short.MAX_VALUE)
+            .addGap(0, 269, Short.MAX_VALUE)
         );
 
         pack();
@@ -146,6 +155,8 @@ public class JFrmJavMenu extends javax.swing.JFrame {
 
     private void jMnuJavVendedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuJavVendedorActionPerformed
         // TODO add your handling code here:
+        JDlgJavVendedor jDlgJavVendedor = new JDlgJavVendedor(null, true);
+        jDlgJavVendedor.setVisible(true);
     }//GEN-LAST:event_jMnuJavVendedorActionPerformed
 
     private void jMnuJavProdutoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuJavProdutoActionPerformed
@@ -165,6 +176,11 @@ public class JFrmJavMenu extends javax.swing.JFrame {
         JDlgJavFornecedor jDlgJavFornecedor = new JDlgJavFornecedor(null, true);
         jDlgJavFornecedor.setVisible(true);
     }//GEN-LAST:event_jMnuJavFornecedorActionPerformed
+
+    private void jMnuJavSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuJavSairActionPerformed
+        // TODO add your handling code here:
+        System.exit(0);
+    }//GEN-LAST:event_jMnuJavSairActionPerformed
 
     /**
      * @param args the command line arguments
