@@ -12,8 +12,8 @@ public class JavCompraProduto {
     private int javIdCompraProduto;
     private int javIdCompra;
     private int javIdProduto;
-    private int javIdQuantidade;
-    private Double javIdPreco;
+    private int javQuantidade;
+    private Double javPreco;
 
     /**
      * @return the javIdCompraProduto
@@ -58,30 +58,30 @@ public class JavCompraProduto {
     }
 
     /**
-     * @return the javIdQuantidade
+     * @return the javQuantidade
      */
-    public int getJavIdQuantidade() {
-        return javIdQuantidade;
+    public int getJavQuantidade() {
+        return javQuantidade;
     }
 
     /**
-     * @param javIdQuantidade the javIdQuantidade to set
+     * @param javQuantidade the javQuantidade to set
      */
-    public void setJavIdQuantidade(int javIdQuantidade) {
-        this.javIdQuantidade = javIdQuantidade;
+    public void setJavQuantidade(int javQuantidade) {
+        this.javQuantidade = javQuantidade;
     }
 
     /**
-     * @return the javIdPreco
+     * @return the javPreco
      */
-    public Double getJavIdPreco() {
-        return javIdPreco;
+    public Double getJavPreco() {
+        return javPreco;
     }
 
     /**
-     * @param javIdPreco the javIdPreco to set
+     * @param javPreco the javPreco to set
      */
-    public void setJavIdPreco(Double javIdPreco) {
-        this.javIdPreco = javIdPreco;
+    public void setJavPreco(Double javPreco) {
+        this.javPreco = javPreco;
     }
-}
+    }
