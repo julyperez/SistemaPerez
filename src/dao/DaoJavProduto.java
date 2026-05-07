@@ -31,7 +31,7 @@ public class DaoJavProduto extends DaoAbstract{
            Connection cnt;
            cnt = DriverManager.getConnection(url, user, password);
            
-            String sql = "insert into jav_compra values(?,?,?,?,?,?,?)";
+            String sql = "insert into jav_produto values(?,?,?,?,?,?,?)";
             PreparedStatement pst = cnt.prepareStatement(sql);
             pst.setInt(1, javProduto.getJavIdProduto());
             pst.setString(2, javProduto.getJavNomeProduto());

@@ -19,6 +19,7 @@ public class JavVenda {
     private Double javValorTotal;
     private String javStatus;
     private Date javDataRegistro;
+    private int javIdProduto;
 
     /**
      * @return the javIdVenda
@@ -116,5 +117,19 @@ public class JavVenda {
      */
     public void setJavDataRegistro(Date javDataRegistro) {
         this.javDataRegistro = javDataRegistro;
+    }
+
+    /**
+     * @return the javIdProduto
+     */
+    public int getJavIdProduto() {
+        return javIdProduto;
+    }
+
+    /**
+     * @param javIdProduto the javIdProduto to set
+     */
+    public void setJavIdProduto(int javIdProduto) {
+        this.javIdProduto = javIdProduto;
     }
 }

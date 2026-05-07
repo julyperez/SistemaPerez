@@ -31,7 +31,7 @@ public class DaoJavFornecedor extends DaoAbstract{
            Connection cnt;
            cnt = DriverManager.getConnection(url, user, password);
            
-            String sql = "insert into jav_cliente values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+            String sql = "insert into jav_fornecedor values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
             PreparedStatement pst = cnt.prepareStatement(sql);
             pst.setInt(1, javFornecedor.getJavIdFornecedor());
             pst.setString(2, javFornecedor.getJavRazaoSocial());

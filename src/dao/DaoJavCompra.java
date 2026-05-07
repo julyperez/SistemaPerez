@@ -38,6 +38,7 @@ public class DaoJavCompra extends DaoAbstract{
             pst.setInt(3, javCompra.getJavIdUsuario());
             pst.setString(4, null); //jav_data_compra
             pst.setDouble(5, javCompra.getJavValorTotal());
+            pst.setString(6, javCompra.getJavNumeroNota());
             pst.setString(7, javCompra.getJavStatus());
             pst.setString(8, null); //jav_data_registroS
             pst.executeUpdate();
